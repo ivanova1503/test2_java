@@ -7,7 +7,6 @@ public class Main {
         System.out.println("Введите уравнение из цифр 0-9, длиной 5 символов, с одним неизвестным x: ");
         String str = scanner.nextLine();
         char[] array = str.toCharArray();
-        //System.out.println(array);
 
         int kolichestvo_x=0; // количество найденных х в уравнении
         boolean proverka = true;
@@ -40,7 +39,7 @@ public class Main {
 
         while((array.length!=5)||(proverka==false) ){
             System.out.println("Неверно введено уравнение!");
-            System.out.println("Введите уравнение, длиной 5 символов, с одним неизвестным x: ");
+            System.out.println("Введите уравнение из цифр 0-9, длиной 5 символов, с одним неизвестным x: ");
             str = scanner.nextLine();
             array = str.toCharArray();
         }
